@@ -1,0 +1,14 @@
+body {
+    color: white;
+    background-color: black;
+    font-size: 30pt;
+}
+
+#content, input {
+    margin: 0 0 0 3em;
+}
+
+#cap {
+    font-size: 45pt;
+    color: #f22f2f;
+}
