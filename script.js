@@ -7,22 +7,20 @@ app.controller('myController', function($scope) {
     
 });
 
-
-    
-
-
-
 app.config(function($routeProvider) {
     
-    $routeProvider.when("/results", {
+    $routeProvider
+    
+        .when("/input", {
+        templateUrl: "input/input.html",
+        controller: "input"
+                        }) 
+    
+        .when("/results", {
         templateUrl: "results/results.html",
         controller: "results"
                         })
-   
-                  .when("/input", {
-        templateUrl: "input/input.html",
-        controller: "input"
-                        })  
+    
 });
 
 

@@ -3,29 +3,26 @@ var app = angular.module("libModule");
 app.factory('wordFactory', function () {
 
     
-    var obj = {};
-    var holder;
+    var wordStore = {};
     
-    obj.setWords = function(word) {
-        holder = word;
+    
+    return {
+        setWords: setWords,
+        getWords: getWords
+//        need help here
+    }
+    
+    
+    function setWords(word) {
+        wordStore = word;
+        console.log(word);    
     };
     
-    obj.giveWords = function() {
-        return holder;
-    };
-    
-    return.obj;
+    function getWords() {
+        return wordStore;
+    }
     
     
-//    function bringObject(words){
-//        var obj = words;
-//    }
-//    function getWords(){
-//        return obj;
-//    }
-//    
-//    return{
-//        bringObject:bringObject,
-//        getWords:getWords
-//    }
+    
+
     });
